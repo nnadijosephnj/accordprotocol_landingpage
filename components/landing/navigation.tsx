@@ -157,7 +157,7 @@ export function Navigation() {
                     <span className="flex items-center gap-2">
                       <span className="text-xs text-muted-foreground">{language.code}</span>
                       {selectedLang === language.code && (
-                        <span className="h-2 w-2 rounded-full bg-[#FF751F]" />
+                        <span className="h-2 w-2 rounded-full bg-[#ff6719]" />
                       )}
                     </span>
                   </button>
@@ -226,7 +226,7 @@ export function Navigation() {
                 className="flex items-center justify-between rounded-xl px-2 py-4 text-base font-medium transition-colors hover:bg-foreground/5"
               >
                 <span className="flex items-center gap-4">
-                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#FF751F]/10 text-[#FF751F]">
+                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#ff6719]/10 text-[#ff6719]">
                     <link.icon className="h-4 w-4" />
                   </span>
                   {link.name}
@@ -244,7 +244,7 @@ export function Navigation() {
               aria-expanded={isLanguageOpen}
             >
               <span>Select Language</span>
-              <ChevronDown className={`h-4 w-4 text-[#FF751F] transition-transform duration-300 ${isLanguageOpen ? "rotate-180" : ""}`} />
+              <ChevronDown className={`h-4 w-4 text-[#ff6719] transition-transform duration-300 ${isLanguageOpen ? "rotate-180" : ""}`} />
             </button>
             <div
               className={`grid gap-2 px-5 transition-all duration-300 ease-in-out ${isLanguageOpen
@@ -263,13 +263,13 @@ export function Navigation() {
                       setIsMobileMenuOpen(false);
                     }}
                     className={`relative rounded-full border px-4 py-2 text-xs font-medium transition-colors ${selectedLang === language.code
-                      ? "border-[#FF751F] bg-[#FF751F] text-white shadow-sm hover:bg-[#FF751F]/90"
-                      : "border-foreground/10 text-foreground hover:border-[#FF751F]/40 hover:bg-foreground/5"
+                      ? "border-[#ff6719] bg-[#ff6719] text-white shadow-sm hover:bg-[#ff6719]/90"
+                      : "border-foreground/10 text-foreground hover:border-[#ff6719]/40 hover:bg-foreground/5"
                       }`}
                   >
                     {language.name}
                     {selectedLang === language.code && (
-                      <span className="absolute -top-0.5 -right-0.5 h-2 w-2 rounded-full bg-white border border-[#FF751F]" />
+                      <span className="absolute -top-0.5 -right-0.5 h-2 w-2 rounded-full bg-white border border-[#ff6719]" />
                     )}
                   </button>
                 ))}

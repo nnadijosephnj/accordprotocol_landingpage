@@ -37,7 +37,7 @@ export function IntroLoader() {
 
   return (
     <div
-      className={`fixed inset-0 z-[9999] flex items-center justify-center bg-[#FF751F] transition-all duration-1000 ease-[cubic-bezier(0.7,0,0.3,1)] ${
+      className={`fixed inset-0 z-[9999] flex items-center justify-center bg-[#ff6719] transition-all duration-1000 ease-[cubic-bezier(0.7,0,0.3,1)] ${
         phase === "leaving" ? "opacity-0 pointer-events-none delay-100" : "opacity-100"
       }`}
     >

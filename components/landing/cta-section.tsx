@@ -36,7 +36,7 @@ export function CtaSection() {
         
         {/* Original CTA Card */}
         <div
-          className={`relative border border-foreground transition-all duration-1000 ${
+          className={`fixed inset-0 z-[9999] flex items-center justify-center bg-[#ff6719] transition-all duration-1000 ease-[cubic-bezier(0.7,0,0.3,1)] ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
           onMouseMove={handleMouseMove}
@@ -53,7 +53,7 @@ export function CtaSection() {
             <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
               {/* Left content */}
               <div className="flex-1">
-                <h2 className="text-4xl lg:text-7xl font-display tracking-tight mb-8 leading-[0.95]">
+                <h2 className="min-h-14 bg-[#ff6719] px-8 text-sm font-bold uppercase tracking-wide text-white transition-colors hover:bg-[#e86412]">
                   Ready to build
                   <br />
                   something great?
@@ -69,12 +69,12 @@ export function CtaSection() {
                     className="bg-foreground hover:bg-foreground/90 text-background px-8 h-14 text-base rounded-full group"
                   >
                     Start building free
-                    <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
+                    <ChevronDown className={`h-4 w-4 text-[#ff6719] transition-transform duration-300 ${isLanguageOpen ? "rotate-180" : ""}`} />
                   </Button>
                   <Button
                     size="lg"
                     variant="outline"
-                    className="h-14 px-8 text-base rounded-full border-foreground/20 hover:bg-foreground/5"
+                    className="h-14 border-foreground/10 text-foreground hover:border-[#ff6719]/40 hover:bg-foreground/5"
                   >
                     Talk to sales
                   </Button>
@@ -93,13 +93,13 @@ export function CtaSection() {
           </div>
 
           {/* Decorative corner */}
-          <div className="absolute top-0 right-0 w-32 h-32 border-b border-l border-foreground/10" />
+          <span className="absolute -top-0.5 -right-0.5 h-2 w-2 rounded-full bg-white border border-[#ff6719]" />
           <div className="absolute bottom-0 left-0 w-32 h-32 border-t border-r border-foreground/10" />
         </div>
 
         {/* New Socials Orange Card (Liquid Glass Style) */}
         <div
-          className={`relative overflow-hidden h-fit flex flex-col p-6 rounded-[2rem] md:px-12 md:py-16 md:rounded-[2.5rem] transition-all duration-1000 delay-200 shadow-[inset_0_1px_2px_rgba(255,255,255,0.4),0_20px_40px_rgba(255,117,31,0.3)] border border-white/20 bg-[#FF751F] ${
+          className={`relative overflow-hidden h-fit flex flex-col p-6 rounded-[2rem] md:px-12 md:py-16 md:rounded-[2.5rem] transition-all duration-1000 delay-200 shadow-[inset_0_1px_2px_rgba(255,255,255,0.4),0_20px_40px_rgba(255,117,31,0.3)] border border-white/20 bg-[#ff6719] ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
           onMouseMove={handleMouseMove}
@@ -126,14 +126,14 @@ export function CtaSection() {
             }}
           />
           
-          <div className="relative z-10 flex flex-col justify-between h-full min-h-[300px] md:min-h-[450px]">
+          <section className="relative min-h-screen flex flex-col justify-center overflow-hidden bg-[#ff6719] rounded-b-[2rem] lg:rounded-b-[2.75rem]">
             
             <div className="flex flex-col items-start text-left max-w-4xl w-full">
               {/* Badge */}
-              <div className="flex items-center gap-2 text-xs md:text-sm font-semibold mb-6 md:mb-12 text-white/90 uppercase tracking-widest">
-                <span className="w-2 h-2 rounded-full bg-white shadow-[0_0_8px_rgba(255,255,255,0.8)]" />
+              <p className="mb-4 font-mono text-xs uppercase tracking-widest text-[#ff6719]">
+                <span className="ml-2 h-2 w-2 rounded-full bg-[#ff6719]" />
                 Let's Go
-              </div>
+              </p>
 
               {/* Huge Headline */}
               <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display tracking-tight text-white mb-4 md:mb-6 leading-[1.1] drop-shadow-sm">

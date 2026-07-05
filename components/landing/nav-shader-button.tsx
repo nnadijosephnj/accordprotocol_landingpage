@@ -81,7 +81,7 @@ export function NavShaderButton({ isScrolled }: { isScrolled: boolean }) {
       {/* Button Text */}
       <span className={`relative z-10 flex items-center transition-colors duration-300 ${isHovered ? "text-white [text-shadow:0_1px_2px_rgba(0,0,0,0.45)]" : ""}`}>
         Launch App
-        <span className="ml-2 h-2 w-2 rounded-full bg-[#FF751F]" />
+        <span className="ml-2 h-2 w-2 rounded-full bg-[#ff6719]" />
       </span>
     </button>
   );

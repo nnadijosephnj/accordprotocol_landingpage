@@ -33,7 +33,7 @@ export function AccordLandingContent() {
       <section id="solutions" className="px-6 py-24 lg:px-12 lg:py-32">
         <div className="mx-auto max-w-[1400px]">
           <div className="mb-12 max-w-3xl">
-            <p className="mb-4 font-mono text-xs uppercase tracking-widest text-[#FF751F]">
+            <p className="mb-4 font-mono text-xs uppercase tracking-widest text-[#ff6719]">
               Solutions
             </p>
             <h2 className="font-display text-4xl leading-tight tracking-tight text-black md:text-6xl">
@@ -56,14 +56,14 @@ export function AccordLandingContent() {
               </ul>
             </article>
 
-            <article className="border-2 border-[#FF751F] p-8 shadow-[12px_12px_0_#0A1128] md:p-10">
+            <article className="border-2 border-[#ff6719] p-8 shadow-[12px_12px_0_#0A1128] md:p-10">
               <h3 className="mb-8 font-display text-3xl tracking-tight text-black">
                 The Accord Protocol Way
               </h3>
               <ul className="space-y-5 text-base leading-relaxed text-black/75 md:text-lg">
                 {accordWay.map((item) => (
                   <li key={item} className="flex gap-3">
-                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#FF751F]" />
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#ff6719]" />
                     <span>{item}</span>
                   </li>
                 ))}
@@ -77,7 +77,7 @@ export function AccordLandingContent() {
         <div className="mx-auto max-w-[1400px]">
           <div className="mb-12 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
             <div>
-              <p className="mb-4 font-mono text-xs uppercase tracking-widest text-[#FF751F]">
+              <p className="mb-4 font-mono text-xs uppercase tracking-widest text-[#ff6719]">
                 Escrow
               </p>
               <h2 className="font-display text-4xl tracking-tight text-black md:text-6xl">
@@ -93,9 +93,9 @@ export function AccordLandingContent() {
             {escrowSteps.map((item) => (
               <article
                 key={item.step}
-                className="min-h-[280px] border border-black/20 bg-white p-8 transition-colors duration-300 hover:border-[#FF751F]"
+                className="min-h-[280px] border border-black/20 bg-white p-8 transition-colors duration-300 hover:border-[#ff6719]"
               >
-                <p className="mb-10 font-mono text-sm font-semibold uppercase tracking-widest text-[#FF751F]">
+                <p className="mb-10 font-mono text-sm font-semibold uppercase tracking-widest text-[#ff6719]">
                   {item.step}
                 </p>
                 <p className="text-lg leading-relaxed text-black/75">{item.body}</p>
@@ -107,7 +107,7 @@ export function AccordLandingContent() {
 
       <section id="disputes" className="px-6 py-24 lg:px-12">
         <div className="mx-auto max-w-[1400px] bg-[#0A1128] px-8 py-16 text-white md:px-14 lg:px-20 lg:py-24">
-          <p className="mb-5 font-mono text-xs uppercase tracking-widest text-[#FF751F]">
+          <p className="mb-5 font-mono text-xs uppercase tracking-widest text-[#ff6719]">
             Disputes
           </p>
           <h2 className="mb-8 max-w-4xl font-display text-4xl leading-tight tracking-tight md:text-6xl">
@@ -123,7 +123,7 @@ export function AccordLandingContent() {
         <div className="mx-auto max-w-[1400px] border border-black/10 bg-[#F7F7F4] p-8 md:p-12 lg:p-16">
           <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
             <div>
-              <p className="mb-4 font-mono text-xs uppercase tracking-widest text-[#FF751F]">
+              <p className="mb-4 font-mono text-xs uppercase tracking-widest text-[#ff6719]">
                 Fees
               </p>
               <h2 className="font-display text-4xl tracking-tight text-black md:text-6xl">
@@ -139,7 +139,7 @@ export function AccordLandingContent() {
 
       <section id="waitlist" className="px-6 py-24 lg:px-12 lg:pb-32">
         <div className="mx-auto max-w-4xl text-center">
-          <p className="mb-4 font-mono text-xs uppercase tracking-widest text-[#FF751F]">
+          <p className="mb-4 font-mono text-xs uppercase tracking-widest text-[#ff6719]">
             Join The Waitlist / Beta Access
           </p>
           <h2 className="font-display text-4xl leading-tight tracking-tight text-black md:text-6xl">

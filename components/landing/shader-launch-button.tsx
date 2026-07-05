@@ -87,7 +87,7 @@ export function ShaderLaunchButton() {
       <span className="absolute inset-[2px] rounded-full bg-[linear-gradient(180deg,rgba(36,36,36,0.45)_0%,rgba(0,0,0,0.25)_100%)]" />
       <span className="relative z-10 flex items-center [text-shadow:0_1px_2px_rgba(0,0,0,0.45)]">
         Launch App
-        <span className="ml-2 h-2 w-2 rounded-full bg-[#FF751F]" />
+        <span className="ml-2 h-2 w-2 rounded-full bg-[#ff6719]" />
         <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
       </span>
     </button>

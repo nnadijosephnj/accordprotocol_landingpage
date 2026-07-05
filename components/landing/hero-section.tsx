@@ -68,7 +68,7 @@ export function HeroSection() {
     }`;
 
   return (
-    <section className="relative min-h-screen flex flex-col justify-center overflow-hidden bg-[#FF751F] rounded-b-[2rem] lg:rounded-b-[2.75rem]">
+    <section className="relative min-h-screen flex flex-col justify-center overflow-hidden bg-[#ff6719] rounded-b-[2rem] lg:rounded-b-[2.75rem]">
       {/* Animated sphere background */}
       <div
         className={`absolute right-0 top-[35%] h-[600px] w-[600px] -translate-y-1/2 pointer-events-none transition-opacity duration-1000 ease-out lg:h-[800px] lg:w-[800px] ${isSceneVisible ? "opacity-[0.5]" : "opacity-0"
