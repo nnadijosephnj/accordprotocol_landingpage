@@ -55,8 +55,12 @@ export function NavShaderButton({ isScrolled }: { isScrolled: boolean }) {
   return (
     <button
       type="button"
-      title="Testnet - Active Network Developer Build"
-      aria-label="Launch App. Testnet - Active Network Developer Build"
+      onClick={() => {
+        const el = document.getElementById("waitlist");
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth" });
+        }
+      }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       className={`group relative isolate flex items-center justify-center overflow-hidden rounded-full font-medium transition-all duration-500 shadow-sm active:scale-[0.98] ${
@@ -80,8 +84,7 @@ export function NavShaderButton({ isScrolled }: { isScrolled: boolean }) {
 
       {/* Button Text */}
       <span className={`relative z-10 flex items-center transition-colors duration-300 ${isHovered ? "text-white [text-shadow:0_1px_2px_rgba(0,0,0,0.45)]" : ""}`}>
-        Launch App
-        <span className="ml-2 h-2 w-2 rounded-full bg-[#ff6719]" />
+        Join Waitlist
       </span>
     </button>
   );
